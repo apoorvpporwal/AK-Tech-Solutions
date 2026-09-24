@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #08090b;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #232733;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #363c4e;
+}
+
+/* Glassmorphism and subtle grid patterns */
+.tech-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.subtle-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.07) 0%, transparent 65%);
+}
+
+.dark-card-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark-card-border:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316 66" fill="none">
+  <!-- Stylized AK Monogram -->
+  <g fill="#ffffff">
+    <!-- 'A' Glyph with dynamic arched crossbar -->
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M 31 8 L 54 58 L 42 58 L 39 46 C 35 38 27 38 23 46 L 20 58 L 8 58 L 31 8 Z M 31 20 L 36.5 36 C 33 33 29 33 25.5 36 L 31 20 Z"
+    />
+    <!-- 'K' Chevron arms with flat caps -->
+    <path
+      d="M 66 8 L 84 8 L 68 33 L 84 58 L 66 58 L 50 33 Z"
+    />
+  </g>
+
+  <!-- Vertical Divider -->
+  <line
+    x1="102"
+    y1="17"
+    x2="102"
+    y2="49"
+    stroke="#ffffff"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.8"
+  />
+
+  <!-- 'Tech Solution' Text -->
+  <text
+    x="116"
+    y="41"
+    fill="#ffffff"
+    font-family="'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+    font-size="28"
+    font-weight="450"
+    letter-spacing="-0.015em"
+  >Tech Solution</text>
+</svg>
