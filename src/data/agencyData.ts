@@ -44,7 +44,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Production code repository', 'Deployment & CI/CD pipeline', 'Performance audit (95+ Lighthouse)', 'Documentation & training'],
     techStack: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL'],
-    timeline: '2 - 4 weeks',
+    timeline: '3 - 6 weeks',
     idealFor: 'Startups, SMEs, and modern brands looking to convert traffic into revenue'
   },
   {
@@ -61,7 +61,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Complete Figma design system', 'Interactive prototype', 'Developer handoff specs', 'Design asset pack'],
     techStack: ['Figma', 'Framer', 'Tokens Studio', 'Adobe CC'],
-    timeline: '1 - 3 weeks',
+    timeline: '2 - 4 weeks',
     idealFor: 'Companies redesigning legacy software or launching new digital products'
   },
   {
@@ -78,7 +78,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Configured n8n/Make pipelines', 'Custom API orchestrator', 'Monitoring dashboard', 'Full runbooks'],
     techStack: ['n8n', 'Make', 'Python', 'LangChain', 'OpenAI', 'Gemini'],
-    timeline: '1 - 3 weeks',
+    timeline: '2 - 4 weeks',
     idealFor: 'Businesses drowning in manual copy-paste workflows and routine admin tasks'
   },
   {
@@ -95,7 +95,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Integrated lead capture engine', 'Lead enrichment script', 'CRM webhook connector', 'Sales notification alerts'],
     techStack: ['React', 'Python', 'Clay', 'Apollo', 'HubSpot / Close', 'FastAPI'],
-    timeline: '2 - 3 weeks',
+    timeline: '3 - 5 weeks',
     idealFor: 'B2B service firms, agencies, and consultancies wanting consistent client acquisition'
   },
   {
@@ -112,7 +112,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Configured email sequences', 'Template library', 'Deliverability DNS setup', 'Analytics tracking dashboard'],
     techStack: ['Resend', 'SendGrid', 'Smartlead', 'Instantly', 'Postmark'],
-    timeline: '1 - 2 weeks',
+    timeline: '2 - 3 weeks',
     idealFor: 'E-commerce, SaaS, and service companies looking to maximize client retention and close rates'
   },
   {
@@ -129,7 +129,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Verified WhatsApp Business API', 'Chatbot flow setup', 'CRM contact sync', 'Agent inbox dashboard'],
     techStack: ['Meta WhatsApp Cloud API', 'Node.js', 'Vector DB', 'Wati / Gupshup'],
-    timeline: '1 - 2 weeks',
+    timeline: '2 - 3 weeks',
     idealFor: 'Clinics, real estate brokers, schools, e-commerce, and high-touch service providers'
   },
   {
@@ -146,7 +146,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Custom integration middleware', 'Error-resilient job queues', 'Automated reconciliation reports'],
     techStack: ['Python', 'Docker', 'PostgreSQL', 'Redis', 'Zapier', 'Stripe'],
-    timeline: '2 - 4 weeks',
+    timeline: '3 - 6 weeks',
     idealFor: 'Growing enterprises looking to scale operations without increasing headcount linearly'
   },
   {
@@ -163,7 +163,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Configured CRM workspace', 'Data migration from spreadsheets', 'Zapier/Make integration bridges', 'Staff training session'],
     techStack: ['HubSpot', 'Zoho CRM', 'Supabase', 'Airtable', 'Pipedrive'],
-    timeline: '1 - 3 weeks',
+    timeline: '2 - 4 weeks',
     idealFor: 'Sales teams and agency owners seeking a single source of truth for all client touchpoints'
   },
   {
@@ -180,7 +180,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Automated document processing pipeline', 'Custom parsing schema', 'Export connectors to ERP/Excel'],
     techStack: ['Tesseract OCR', 'AWS Textract', 'LangChain', 'Python', 'FastAPI'],
-    timeline: '1 - 3 weeks',
+    timeline: '2 - 4 weeks',
     idealFor: 'Accounting firms, logistics providers, law offices, and loan/insurance brokerages'
   },
   {
@@ -197,7 +197,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Interactive BI dashboard', 'Data warehouse setup', 'Automated ETL pipeline', 'KPI documentation'],
     techStack: ['PowerBI', 'Tableau', 'Metabase', 'PostgreSQL', 'Python', 'Plotly'],
-    timeline: '2 - 4 weeks',
+    timeline: '3 - 6 weeks',
     idealFor: 'Decision makers wanting unambiguous real-time visibility over cash flow and unit economics'
   },
   {
@@ -214,7 +214,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Secure deployed AI assistant', 'Embedded vector index', 'Slack/Teams bot integration', 'Admin control console'],
     techStack: ['LangChain', 'Pinecone / pgvector', 'Next.js', 'OpenAI', 'Anthropic'],
-    timeline: '2 - 3 weeks',
+    timeline: '3 - 5 weeks',
     idealFor: 'Fast-moving teams that want instant access to company guidelines and technical answers'
   },
   {
@@ -231,7 +231,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     ],
     deliverables: ['Automated research bot', 'Scheduled reporting pipeline', 'Structured data feed export'],
     techStack: ['Playwright', 'Python', 'BeautifulSoup', 'Gemini / Claude', 'Markdown engine'],
-    timeline: '1 - 3 weeks',
+    timeline: '2 - 4 weeks',
     idealFor: 'VCs, strategists, marketers, and founders needing continuous competitive advantage'
   }
 ];
@@ -371,33 +371,6 @@ export const PROJECTS_DATA: ProjectItem[] = [
     mockupType: 'dashboard',
     clientIndustry: 'Accounting & Professional Firms',
     featured: false
-  }
-];
-
-export const TESTIMONIALS_DATA: TestimonialItem[] = [
-  {
-    id: 'test-1',
-    quote: 'AK Tech Solutions helped us automate our lead generation process. The team is professional, responsive and highly skilled. Highly recommended!',
-    name: 'Rahul Sharma',
-    role: 'Founder',
-    company: 'GrowthX (Client)',
-    verified: true
-  },
-  {
-    id: 'test-2',
-    quote: 'The custom web application and automated WhatsApp booking bot doubled our patient consultations within 45 days. Their attention to detail is unmatched.',
-    name: 'Dr. Vikram Patel',
-    role: 'Managing Director',
-    company: 'MedFlow Health Solutions',
-    verified: true
-  },
-  {
-    id: 'test-3',
-    quote: 'Their AI workflow pipeline saved our operations team over 30 hours every single week. What used to take a team of 4 is now automated flawlessly.',
-    name: 'Priya Nair',
-    role: 'Head of Operations',
-    company: 'Zenith Logistics & Supply',
-    verified: true
   }
 ];
 

@@ -1,14 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  CheckCircle2, 
-  Zap, 
-  ShieldCheck, 
-  Headphones, 
-  ChevronLeft, 
-  ChevronRight,
+import { motion } from 'framer-motion';
+import {
+  CheckCircle2,
+  Zap,
+  ShieldCheck,
+  Headphones,
   HeartPulse,
   GraduationCap,
   ShoppingBag,
@@ -19,17 +17,14 @@ import {
   Store,
   Sparkles
 } from 'lucide-react';
-import { TESTIMONIALS_DATA, INDUSTRIES_DATA } from '../data/agencyData';
+import { INDUSTRIES_DATA } from '../data/agencyData';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const AdvantageSection: React.FC = () => {
-  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
   const leftColRef = useRef<HTMLDivElement>(null);
   const rightColRef = useRef<HTMLDivElement>(null);
-
-  const currentTestimonial = TESTIMONIALS_DATA[currentTestimonialIndex];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -81,14 +76,6 @@ export const AdvantageSection: React.FC = () => {
 
     return () => ctx.revert();
   }, []);
-
-  const handleNext = () => {
-    setCurrentTestimonialIndex((prev) => (prev + 1) % TESTIMONIALS_DATA.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentTestimonialIndex((prev) => (prev - 1 + TESTIMONIALS_DATA.length) % TESTIMONIALS_DATA.length);
-  };
 
   const getIndustryIcon = (iconName: string) => {
     const props = { className: "w-5 h-5 text-zinc-800" };
@@ -175,81 +162,6 @@ export const AdvantageSection: React.FC = () => {
                 </div>
               ))}
             </div>
-
-            {/* Testimonial Quote Slider Box matching dark card in reference */}
-            <motion.div 
-              whileHover={{ scale: 1.005 }}
-              transition={{ duration: 0.3 }}
-              className="relative rounded-2xl bg-[#0c0d12] text-white border border-zinc-800 p-6 sm:p-7 shadow-xl overflow-hidden"
-            >
-              <div className="flex items-start justify-between gap-4 mb-4">
-                <span className="text-3xl font-serif text-white/40 leading-none">“</span>
-                <div className="flex items-center gap-1.5">
-                  <button
-                    onClick={handlePrev}
-                    className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-zinc-300 flex items-center justify-center transition-colors cursor-pointer"
-                    aria-label="Previous testimonial"
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={handleNext}
-                    className="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 text-zinc-300 flex items-center justify-center transition-colors cursor-pointer"
-                    aria-label="Next testimonial"
-                  >
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Animated Text on Slide Transition */}
-              <div className="min-h-[70px]">
-                <AnimatePresence mode="wait">
-                  <motion.blockquote
-                    key={currentTestimonial.id}
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -6 }}
-                    transition={{ duration: 0.25 }}
-                    className="text-sm sm:text-base font-medium text-zinc-200 leading-relaxed italic mb-6"
-                  >
-                    "{currentTestimonial.quote}"
-                  </motion.blockquote>
-                </AnimatePresence>
-              </div>
-
-              <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-zinc-800 border border-white/20 flex items-center justify-center font-bold text-white text-xs">
-                    {currentTestimonial.name.charAt(0)}
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-white font-display">
-                      {currentTestimonial.name}
-                    </div>
-                    <div className="text-xs text-zinc-400">
-                      {currentTestimonial.role}, {currentTestimonial.company}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Dots indicator */}
-                <div className="flex items-center gap-1.5">
-                  {TESTIMONIALS_DATA.map((_, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setCurrentTestimonialIndex(idx)}
-                      className={`h-1.5 rounded-full transition-all cursor-pointer ${
-                        currentTestimonialIndex === idx
-                          ? 'w-5 bg-white'
-                          : 'w-1.5 bg-white/20 hover:bg-white/40'
-                      }`}
-                      aria-label={`Go to slide ${idx + 1}`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </motion.div>
           </div>
 
           {/* Right Column: Industries We Work With */}

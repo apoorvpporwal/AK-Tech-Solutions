@@ -31,7 +31,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     email: '',
     phone: '',
     message: '',
-    budget: '$5,000 - $15,000',
+    budget: '$900 - $2,500',
     services: preselectedService ? [preselectedService] : ['Website & Web Development']
   });
 
@@ -99,7 +99,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         email: '',
         phone: '',
         message: '',
-        budget: '$5,000 - $15,000',
+        budget: '$900 - $2,500',
         services: ['Website & Web Development']
       });
     } catch {
@@ -226,10 +226,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-[#090a0d] border border-white/10 focus:border-white/30 focus:outline-none text-sm text-white transition-colors cursor-pointer"
                     >
-                      <option value="$1,000 - $3,000">₹75,000 - ₹2.5 Lakhs ($1k - $3k)</option>
-                      <option value="$3,000 - $7,000">₹2.5 Lakhs - ₹6 Lakhs ($3k - $7k)</option>
-                      <option value="$7,000 - $15,000">₹6 Lakhs - ₹12 Lakhs ($7k - $15k)</option>
-                      <option value="$15,000+">₹12 Lakhs+ ($15k+ Enterprise)</option>
+                      <option value="$300 - $900">₹25,000 - ₹75,000 ($300 - $900)</option>
+                      <option value="$900 - $2,500">₹75,000 - ₹2 Lakhs ($900 - $2.5k)</option>
+                      <option value="$2,500 - $6,000">₹2 Lakhs - ₹5 Lakhs ($2.5k - $6k)</option>
+                      <option value="$6,000+">₹5 Lakhs+ ($6k+ Enterprise)</option>
                     </select>
                   </div>
                 </div>
