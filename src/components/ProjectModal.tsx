@@ -44,7 +44,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         </button>
 
         {/* Category & Title */}
-        <div className="space-y-1 mb-6 pr-8">
+        <div className="space-y-1 mb-4 pr-8">
           <div className="flex items-center gap-2">
             <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
               {project.categoryLabel}
@@ -62,8 +62,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
 
         {/* Media Preview Slider */}
         {images.length > 0 && (
-          <div className="space-y-3 mb-6 w-full">
-            <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
+          <div className="space-y-3 mb-4 w-full">
+            <div className="relative w-full h-40 sm:h-48 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImageIndex}
