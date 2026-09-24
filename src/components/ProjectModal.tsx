@@ -29,22 +29,23 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto overflow-x-hidden">
       <div
-        className="relative w-full max-w-[calc(100vw-1rem)] sm:max-w-3xl bg-[#0f1118] border border-white/15 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl my-4 sm:my-8 text-left overflow-hidden"
+        className="relative w-full max-w-[95vw] sm:max-w-3xl bg-[#0f1118] border border-white/15 rounded-2xl sm:rounded-3xl p-3 sm:p-6 md:p-8 shadow-2xl my-2 sm:my-8 text-left overflow-hidden"
+        style={{ maxWidth: 'min(95vw, 800px)' }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-zinc-300 hover:text-white flex items-center justify-center transition-colors cursor-pointer z-30"
+          className="fixed top-4 right-4 sm:absolute sm:top-5 sm:right-5 w-10 h-10 rounded-full bg-black/80 hover:bg-black text-white flex items-center justify-center transition-colors cursor-pointer z-[100] border border-white/30 shadow-lg"
           aria-label="Close modal"
         >
-          <X className="w-4 h-4" />
+          <X className="w-5 h-5" />
         </button>
 
         {/* Category & Title */}
-        <div className="space-y-1 mb-6">
+        <div className="space-y-1 mb-6 pr-8">
           <div className="flex items-center gap-2">
             <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
               {project.categoryLabel}
@@ -52,10 +53,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             <span className="text-zinc-600">·</span>
             <span className="text-xs text-zinc-400">{project.clientIndustry}</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white font-display">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white font-display">
             {project.title}
           </h2>
-          <p className="text-sm text-zinc-400 font-medium">
+          <p className="text-xs sm:text-sm text-zinc-400 font-medium">
             {project.subtitle}
           </p>
         </div>
@@ -63,7 +64,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         {/* Media Preview Slider */}
         {images.length > 0 && (
           <div className="space-y-3 mb-6">
-            <div className="relative w-full max-w-full h-56 sm:h-64 md:h-80 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
+            <div className="relative w-full h-48 sm:h-56 md:h-80 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImageIndex}
@@ -124,7 +125,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         )}
 
         {/* Impact Metrics Banner */}
-        <div className="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-white/[0.03] border border-white/[0.08] mb-6">
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 p-3 sm:p-4 rounded-2xl bg-white/[0.03] border border-white/[0.08] mb-6">
           {project.impactMetrics.map((metric) => (
             <div key={metric.label} className="text-center space-y-0.5">
               <div className="text-lg sm:text-2xl font-extrabold text-emerald-400 font-mono">
