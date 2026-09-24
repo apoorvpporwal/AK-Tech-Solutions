@@ -16,9 +16,9 @@ export const COMPANY_INFO = {
   state: 'Gujarat',
   country: 'India',
   stats: [
-    { value: '50+', label: 'Projects Completed' },
-    { value: '30+', label: 'Happy Clients' },
-    { value: '100%', label: 'Client Satisfaction' }
+    { value: '5+', label: 'Projects Delivered' },
+    { value: '3+', label: 'Happy Clients' },
+    { value: '2', label: 'Founders' }
   ],
   socials: {
     linkedin: 'https://linkedin.com/company/ak-tech-solutions',
