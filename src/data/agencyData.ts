@@ -252,11 +252,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Bounce Rate', value: '-42%' }
     ],
     tags: ['Next.js', 'Tailwind CSS', 'SEO'],
-    imageSrc: '/src/assets/images/project_corp_website_1790230329419.jpg',
+    imageSrc: '/images/project_corp_website_1790230329419.jpg',
     images: [
-      '/src/assets/images/project_corp_website_1790230329419.jpg',
-      '/src/assets/images/project_corp_mobile_1790231680641.jpg',
-      '/src/assets/images/hero_device_composition_1790230303735.jpg'
+      '/images/project_corp_website_1790230329419.jpg',
+      '/images/project_corp_mobile_1790231680641.jpg',
+      '/images/hero_device_composition_1790230303735.jpg'
     ],
     mockupType: 'laptop',
     clientIndustry: 'Industrial & B2B Solutions',
@@ -277,10 +277,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Processing Speed', value: '15 sec' }
     ],
     tags: ['Python', 'LangChain', 'n8n'],
-    imageSrc: '/src/assets/images/project_ai_workflow_1790230343937.jpg',
+    imageSrc: '/images/project_ai_workflow_1790230343937.jpg',
     images: [
-      '/src/assets/images/project_ai_workflow_1790230343937.jpg',
-      '/src/assets/images/project_ai_logs_1790231696467.jpg'
+      '/images/project_ai_workflow_1790230343937.jpg',
+      '/images/project_ai_logs_1790231696467.jpg'
     ],
     mockupType: 'workflow',
     clientIndustry: 'Supply Chain & Logistics',
@@ -301,10 +301,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Total Inbound Value', value: '$1.4M' }
     ],
     tags: ['React', 'Node.js', 'MongoDB'],
-    imageSrc: '/src/assets/images/project_lead_funnel_1790230359118.jpg',
+    imageSrc: '/images/project_lead_funnel_1790230359118.jpg',
     images: [
-      '/src/assets/images/project_lead_funnel_1790230359118.jpg',
-      '/src/assets/images/project_crm_view_1790231711058.jpg'
+      '/images/project_lead_funnel_1790230359118.jpg',
+      '/images/project_crm_view_1790231711058.jpg'
     ],
     mockupType: 'mobile',
     clientIndustry: 'High-Growth EdTech & SaaS',
@@ -325,10 +325,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Exec Time Saved', value: '10 hrs/mo' }
     ],
     tags: ['Python', 'Plotly', 'FastAPI'],
-    imageSrc: '/src/assets/images/project_bi_dashboard_1790230372678.jpg',
+    imageSrc: '/images/project_bi_dashboard_1790230372678.jpg',
     images: [
-      '/src/assets/images/project_bi_dashboard_1790230372678.jpg',
-      '/src/assets/images/project_bi_chart_1790231723485.jpg'
+      '/images/project_bi_dashboard_1790230372678.jpg',
+      '/images/project_bi_chart_1790231723485.jpg'
     ],
     mockupType: 'dashboard',
     clientIndustry: 'FinTech & B2B Services',

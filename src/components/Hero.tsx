@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ onGetStarted, onViewWork }) => {
         }}
       >
         <img
-          src="/src/assets/images/hero_cover_bg_1790231026481.jpg"
+          src="/images/hero_cover_bg_1790231026481.jpg"
           alt="AK Tech Solutions Hero Tech Canvas"
           className="w-full h-full object-cover object-center opacity-20 mix-blend-luminosity"
           loading="eager"
@@ -212,7 +212,7 @@ export const Hero: React.FC<HeroProps> = ({ onGetStarted, onViewWork }) => {
               {/* Showcase Image Frame */}
               <div className="rounded-2xl p-2 bg-gradient-to-b from-white/15 via-white/5 to-transparent border border-white/15 shadow-2xl overflow-hidden backdrop-blur-md">
                 <img
-                  src="/src/assets/images/hero_device_composition_1790230303735.jpg"
+                  src="/images/hero_device_composition_1790230303735.jpg"
                   alt="AK Tech Solutions Hardware & Software Preview"
                   className="w-full h-auto object-cover rounded-xl transition-transform duration-700 group-hover:scale-[1.01]"
                   loading="eager"
