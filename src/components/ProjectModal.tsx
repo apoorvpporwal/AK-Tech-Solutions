@@ -29,19 +29,18 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90 backdrop-blur-md overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto">
       <div
-        className="relative w-[calc(100vw-16px)] sm:w-auto sm:max-w-2xl bg-[#0f1118] border border-white/15 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-2xl my-2 sm:my-8 text-left box-border"
-        style={{ maxWidth: 'calc(100vw - 16px)' }}
+        className="relative w-full max-w-[calc(100vw-1rem)] sm:max-w-2xl bg-[#0f1118] border border-white/15 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl my-4 sm:my-8 text-left overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="fixed top-4 right-4 sm:absolute sm:top-5 sm:right-5 w-10 h-10 rounded-full bg-black/80 hover:bg-black text-white flex items-center justify-center transition-colors cursor-pointer z-[100] border border-white/30 shadow-lg"
+          className="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-zinc-300 hover:text-white flex items-center justify-center transition-colors cursor-pointer"
           aria-label="Close modal"
         >
-          <X className="w-5 h-5" />
+          <X className="w-4 h-4" />
         </button>
 
         {/* Category & Title */}
@@ -64,7 +63,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         {/* Media Preview Slider */}
         {images.length > 0 && (
           <div className="space-y-3 mb-6 w-full">
-            <div className="relative w-full max-w-full h-44 sm:h-56 md:h-80 rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
+            <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImageIndex}
