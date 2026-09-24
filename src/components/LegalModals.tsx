@@ -13,9 +13,9 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
   const isPrivacy = type === 'privacy';
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto">
-      <div 
-        className="relative w-full max-w-2xl bg-[#0f1118] border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl my-8 text-left max-h-[85vh] overflow-y-auto"
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto">
+      <div
+        className="relative w-full max-w-[calc(100vw-1rem)] sm:max-w-2xl bg-[#0f1118] border border-white/15 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl my-4 sm:my-8 text-left max-h-[85vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <button

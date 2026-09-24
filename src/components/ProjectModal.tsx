@@ -29,9 +29,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto">
-      <div 
-        className="relative w-full max-w-3xl bg-[#0f1118] border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl my-8 text-left"
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto">
+      <div
+        className="relative w-full max-w-[calc(100vw-1rem)] sm:max-w-3xl bg-[#0f1118] border border-white/15 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl my-4 sm:my-8 text-left overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -63,7 +63,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         {/* Media Preview Slider */}
         {images.length > 0 && (
           <div className="space-y-3 mb-6">
-            <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
+            <div className="relative w-full max-w-full h-56 sm:h-64 md:h-80 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImageIndex}

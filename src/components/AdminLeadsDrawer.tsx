@@ -27,8 +27,8 @@ export const AdminLeadsDrawer: React.FC<AdminLeadsDrawerProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-black/60 backdrop-blur-sm animate-fade-in">
-      <div 
-        className="w-full max-w-md bg-[#0d0f15] border-l border-white/10 h-full p-6 flex flex-col justify-between overflow-y-auto text-left"
+      <div
+        className="w-full max-w-[calc(100vw-2rem)] sm:max-w-md bg-[#0d0f15] border-l border-white/10 h-full p-4 sm:p-6 flex flex-col justify-between overflow-y-auto text-left"
         onClick={(e) => e.stopPropagation()}
       >
         <div>
