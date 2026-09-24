@@ -29,10 +29,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto overflow-x-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90 backdrop-blur-md overflow-y-auto">
       <div
-        className="relative w-full max-w-[95vw] sm:max-w-3xl bg-[#0f1118] border border-white/15 rounded-2xl sm:rounded-3xl p-3 sm:p-6 md:p-8 shadow-2xl my-2 sm:my-8 text-left overflow-hidden"
-        style={{ maxWidth: 'min(95vw, 800px)' }}
+        className="relative w-[calc(100vw-16px)] sm:w-auto sm:max-w-2xl bg-[#0f1118] border border-white/15 rounded-xl sm:rounded-2xl p-3 sm:p-6 shadow-2xl my-2 sm:my-8 text-left box-border"
+        style={{ maxWidth: 'calc(100vw - 16px)' }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -63,8 +63,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
 
         {/* Media Preview Slider */}
         {images.length > 0 && (
-          <div className="space-y-3 mb-6">
-            <div className="relative w-full h-48 sm:h-56 md:h-80 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
+          <div className="space-y-3 mb-6 w-full">
+            <div className="relative w-full max-w-full h-44 sm:h-56 md:h-80 rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImageIndex}
@@ -105,7 +105,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
 
             {/* Thumbnail Row */}
             {images.length > 1 && (
-              <div className="flex items-center gap-2 overflow-x-auto pb-1">
+              <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full">
                 {images.map((img, idx) => (
                   <button
                     key={idx}
