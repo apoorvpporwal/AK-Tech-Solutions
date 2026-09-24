@@ -18,7 +18,7 @@ export const COMPANY_INFO = {
   stats: [
     { value: '5+', label: 'Projects Delivered' },
     { value: '3+', label: 'Happy Clients' },
-    { value: '2', label: 'Founders' }
+    { value: '100%', label: 'Client Satisfaction' }
   ],
   socials: {
     linkedin: 'https://linkedin.com/company/ak-tech-solutions',
