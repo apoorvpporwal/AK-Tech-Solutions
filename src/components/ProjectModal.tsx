@@ -63,7 +63,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         {/* Media Preview Slider */}
         {images.length > 0 && (
           <div className="space-y-3 mb-4 w-full">
-            <div className="relative w-full h-40 sm:h-48 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
+            <div className="relative w-full h-32 sm:h-40 rounded-2xl overflow-hidden border border-white/10 bg-black group/modalSlider">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImageIndex}
@@ -124,7 +124,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         )}
 
         {/* Impact Metrics Banner */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 p-3 sm:p-4 rounded-2xl bg-white/[0.03] border border-white/[0.08] mb-6">
+        <div className="grid grid-cols-3 gap-2 p-2 sm:p-3 rounded-xl bg-white/[0.03] border border-white/[0.08] mb-4">
           {project.impactMetrics.map((metric) => (
             <div key={metric.label} className="text-center space-y-0.5">
               <div className="text-lg sm:text-2xl font-extrabold text-emerald-400 font-mono">
@@ -138,9 +138,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         </div>
 
         {/* Problem & Solution Breakdown */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          <div className="p-4 rounded-xl bg-[#141722] border border-white/5 space-y-2">
-            <span className="text-xs font-bold text-red-400 uppercase tracking-wide block">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+          <div className="p-3 rounded-lg bg-[#141722] border border-white/5 space-y-1">
+            <span className="text-[11px] font-bold text-red-400 uppercase tracking-wide block">
               The Client Challenge
             </span>
             <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
@@ -148,8 +148,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             </p>
           </div>
 
-          <div className="p-4 rounded-xl bg-[#141722] border border-white/5 space-y-2">
-            <span className="text-xs font-bold text-emerald-400 uppercase tracking-wide block">
+          <div className="p-3 rounded-lg bg-[#141722] border border-white/5 space-y-1">
+            <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wide block">
               Our Technical Solution
             </span>
             <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
@@ -159,7 +159,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         </div>
 
         {/* Technologies Used */}
-        <div className="mb-8 space-y-2">
+        <div className="mb-4 space-y-2">
           <span className="text-xs font-semibold text-zinc-400 block">
             Core Technology Stack:
           </span>
